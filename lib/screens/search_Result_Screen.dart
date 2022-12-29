@@ -22,7 +22,6 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Column(
         children: [
           Container(
@@ -79,7 +78,7 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                               meaning3: data[2]);
                           print("Data Submitted");
                         },
-                        child: Text("Save Data"),
+                        child: Text("Search Data"),
                       )
                     ],
                   );

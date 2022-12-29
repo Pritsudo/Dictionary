@@ -12,11 +12,10 @@ class _searchHistoryScreenState extends State<searchHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
         body: FutureBuilder<List>(
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return const CircularProgressIndicator();
+              return const Center(child:  CircularProgressIndicator(strokeWidth: 5,color: Color.fromARGB(255, 118, 246, 208),));
             } else if (snapshot.hasData) {
               List data = snapshot.data!;
               return ListView.builder(
@@ -25,7 +24,7 @@ class _searchHistoryScreenState extends State<searchHistoryScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
-                    color: Color.fromARGB(255, 36, 174, 238),
+                    color: Color.fromARGB(255, 45, 238, 180),
                     elevation: 10,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
