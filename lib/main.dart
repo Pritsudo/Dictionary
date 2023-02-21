@@ -47,7 +47,7 @@ class _NavigationBarState extends State<NavigationBar > {
   Widget build(BuildContext context) {  
     return Scaffold(  
       appBar: AppBar(  
-        title: const Text('Flutter BottomNavigationBar Example'),  
+        title: const Text('Search Word'),  
           backgroundColor: Color.fromARGB(220, 46, 215, 79)
       ),  
       body: Center(  
@@ -64,7 +64,6 @@ class _NavigationBarState extends State<NavigationBar > {
           BottomNavigationBarItem(  
             icon: Icon(Icons.history),  
             label: 'History',  
-            
           ),  
           
         ],  

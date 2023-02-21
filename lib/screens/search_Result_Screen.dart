@@ -40,7 +40,7 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                 });
               }
             },
-            child: const Text("Submit Data"),
+            child: const Text("Search Word"),
           ),
           if (_isSearch)
             FutureBuilder<List>(
@@ -76,9 +76,8 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                               meaning1: data[0],
                               meaning2: data[1],
                               meaning3: data[2]);
-                          print("Data Submitted");
-                        },
-                        child: Text("Search Data"),
+                          },
+                        child: Text("Save word to database"),
                       )
                     ],
                   );
