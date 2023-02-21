@@ -4,7 +4,7 @@ import 'dart:convert';
 class ApiCall {
   Future<List> translateWord(String searchedWord) async {
     var url = Uri.parse(
-        "https://words.bighugelabs.com/api/2/2a262a4f76695374f7b78957bec10cab/$searchedWord/json");
+        "Api");
     var responce = await https.get(url);
     final extractedData = json.decode(responce.body);
     return extractedData["noun"]["syn"];
